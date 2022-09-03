@@ -12,5 +12,5 @@ func RemoveByIndex[T comparable](arr []T, index int)   error {
     return nil
   }
   
-  return  errors.New(fmt.Sprintf("slice does not contain an element with an index %v", index))
+  return  errors.New(fmt.Sprintf("index not found %v", index))
 }
