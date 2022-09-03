@@ -20,7 +20,7 @@ func TestRemoveDublicatesStr(t *testing.T) {
 	for _, test := range tests {
 		got := RemoveDublicates(test.arr)
 		if !reflect.DeepEqual(got, test.want) {
-			t.Errorf("RemoveDublicatesStr([]string) []string, want: %v, got: %v\n", test.want, got)
+			t.Errorf("RemoveDublicates([]T) []T, want: %v, got: %v\n", test.want, got)
 		}
 	}
 }
@@ -40,7 +40,7 @@ func TestRemoveDublicatesInt(t *testing.T) {
 	for _, test := range tests {
 		got := RemoveDublicates(test.arr)
 		if !reflect.DeepEqual(got, test.want) {
-			t.Errorf("RemoveDublicatesStr([]string) []string, want: %v, got: %v\n", test.want, got)
+			t.Errorf("RemoveDublicates([]T) []T, want: %v, got: %v\n", test.want, got)
 		}
 	}
 }
